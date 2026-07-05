@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>WDD 131 – Fundamentos da Web Dinâmica - Fernando Luis Ferreira</title>
+
+    <meta name="description" content="WDD 131 – Fundamentos da Web Dinâmica. Página inicial  de Fernando Luis Ferreira, da disciplina Fundamentos da Web Dinâmica, do curso de bacharelado em Software, da byupathway.">
+
+    <meta name="author" content="Fernando Luis Ferreira">
+
+    
+    <link rel="stylesheet" href="estilos/base.css">
+
+    <script src="scripts/obterdatas.js" defer></script>
 </head>
+
 <body>
-    <h1>Fernando Luis Ferreira</h1>
-    <p>Software Developer</p>
+
+    <header>
+
+        
+            <span id="course-title">WDD 131 – Fundamentos da Web Dinâmica - Fernando Luis Ferreira</span>
+        
+        <nav>
+            <a href="https://www.linkedin.com/in/davi-victor-santos/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/21?lang=por">Escritura</a>
+            <a href="">Projeto Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Fernando Luis Ferreira</h1>
+    
+        <section class="card about-card">
+            <h2>Minha História</h2>
+    
+            <div class="about-content">
+                <p>
+                    Moro em Campinas, São Paulo, casado com Giselle, tenho 2 filhos, Fernando Junior e Giovanna. Gosto de fotografia, fazer churrasco, consertar coisas e aprender um pouco de tudo.             </p>
+    
+                <img src="imagens/perfil.jpg" alt="Foto Fernando Luis Ferreira" width="200">
+            </div>
+    
+            <h3>Campinas, São Paulo</h3>
+    
+            <div class="place-content">
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Bosque_dos_Jequitib%C3%A1s.jpg/500px-Bosque_dos_Jequitib%C3%A1s.jpg" alt="Bandeira oficial do estado da Paraíba">
+                    <figcaption>Vista aérea do Bosque dos Jequitibás, Campinas - SP</figcaption>
+                </figure>
+    
+                <p>
+                   Campinas é uma cidade localizada no interior do estado de São Paulo, Brasil. É conhecida por sua rica história, cultura vibrante e desenvolvimento econômico. A cidade possui uma infraestrutura moderna, com universidades renomadas, centros de pesquisa e um setor industrial diversificado. Campinas também é famosa por seus parques, áreas verdes e eventos culturais que atraem visitantes de diversas regiões. Além disso, a cidade desempenha um papel importante na economia do estado de São Paulo, sendo um polo de inovação e tecnologia.
+                </p>
+            </div>
+        </section>
+    
+        <section class="card resources-card">
+            <h2>Recursos Web Dev</h2>
+    
+            <ul>
+                <li><a href="https://dev.to/" target="_blank">Comunidade Dev.to</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Revista Smashing</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="anoatual"></span> 🚀Fernando Luis Ferreira - Campinas, São Paulo 🚀
+        </p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+
 </body>
+
 </html>
