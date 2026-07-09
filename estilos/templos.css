@@ -1,11 +1,8 @@
-
-  
-    body {
+body {
   font-family: 'Roboto', sans-serif;
   
   }
-header h1 {
-  text-align: center;}
+
   
 header, main, footer {
   max-width:640px;
@@ -22,15 +19,15 @@ main {
   grid-gap: 1rem;
 }
 
-section {
+div {
   padding:1rem;
-  background-color: #fff;
+  background-color: #fff;}
+
+.navigation a:hover, .navigation a:active {
+    color: white;
+    background-color: black;
+
 }
-  @media screen and (min-width: 500px) {
-     header {
-        background-color: #000;
-        color: #fff;
-     }
-    main {
-        grid-template-columns: 1fr 1fr;
-    }}
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
