@@ -26,8 +26,4 @@ div {
 .navigation a:hover, .navigation a:active {
     color: white;
     background-color: black;
-
 }
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
