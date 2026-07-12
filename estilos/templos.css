@@ -1,29 +1,112 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  
-  }
+  background-color: #c5c517;
+  color: #262626;
+  line-height: 1.5;
+}
 
-  
-header, main, footer {
-  max-width:640px;
-  margin: 1rem auto;
-  border: 1px solid #bbb;
-  padding: 1rem;
-  background-color: #e4ebfa;
+header {
+  background-color: #129a6f;
+  color: white;
+  padding: 15px;
+}
 
+.cabeçalho {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cabeçalho p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+#botao-menu {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+nav.show {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+nav a:hover {
+  color: #0b3d2e;
 }
 
 main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 15px;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
-div {
-  padding:1rem;
-  background-color: #fff;}
+main h1 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #0b3d2e;
+  margin-bottom: 10px;
+  grid-column: 1 / -1;
+}
 
-.navigation a:hover, .navigation a:active {
-    color: white;
-    background-color: black;
+figure {
+  background-color: rgb(185, 153, 153);
+  border: 1px solid #dcdcd6;
+  text-align: center;
+  font-weight: 700;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figure:hover {
+    transform: scale(1.1);
+}
+
+figcaption {
+  padding: 10px;
+  color: black;
+  font-weight: Roboto;
+}
+
+footer {
+  background-color: rgb(175, 220, 175);
+  text-align: center;
+  padding: 15px;
+  font-size: 15px;
+  color: black;
+  border-top: 0.5px solid #f5f5ee;
+  margin-top: 5px;
 }
