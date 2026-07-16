@@ -10,16 +10,16 @@ footer {
 }
 .banner {
     width: 100%;
-    background-color: #f0fdf4; /* Um verde bem suave, remetendo ao "bug" */
-    color: #166534;            /* Texto verde escuro para contraste e legibilidade */
-    border:5px solid #bbf7d0; /* Borda sutil */
-    border-radius: 30px;        /* Bordas levemente arredondadas */
-    padding: 12px 24px;        /* Espaçamento interno */
-    text-align: center;        /* Centraliza o texto */
-    margin-bottom: 20px;       /* Afasta o banner do título H1 */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Sombra bem leve */
+    background-color: #f0fdf4; 
+    color: #166534;           
+    border:5px solid #bbf7d0; 
+    border-radius: 30px;        
+    padding: 12px 24px;       
+    text-align: center;       
+    margin-bottom: 20px;      
+   
 p {
-  margin: 4px 0;             /* Ajusta o espaçamento entre as linhas de texto */
+  margin: 4px 0;             
     font-size: 0.95rem;
 }
 }
