@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #c5c517;
+  background-color: #e9e967;
   color: #262626;
   line-height: 1.5;
 }
@@ -15,6 +15,7 @@ header {
   background-color: #129a6f;
   color: white;
   padding: 15px;
+ 
 }
 
 .cabeçalho {
@@ -104,7 +105,7 @@ footer {
   background-color: rgb(175, 220, 175);
   text-align: center;
   padding: 15px;
-  font-size: 15px;
+  font-size: 18px;
   color: black;
   border-top: 0.5px solid #f5f5ee;
   margin-top: 5px;
@@ -129,4 +130,6 @@ footer {
     margin-top: 0;
   }
 
-}
+} */
+
+/* --- RESET & BASICS ---
