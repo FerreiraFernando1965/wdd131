@@ -10,9 +10,10 @@ footer {
 }
 .banner {
     width: 100%;
-    background-color: #f0fdf4; 
-    color: #166534;           
-    border:5px solid #bbf7d0; 
+    background-color: rgba(4, 4, 248, 0.935); 
+    color: #f0f0f4;           
+    border:25px solid rgb(242, 255, 1);
+	 
     border-radius: 30px;        
     padding: 12px 24px;       
     text-align: center;       

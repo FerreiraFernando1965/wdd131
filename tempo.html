@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidade de Campinas SP Brasil</title>
+    <link rel="stylesheet" href="tempo.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+        Cidade de Campinas -SP- Brasil
+        </header>
+        <div class="yellow-bar"></div>
+
+        <div class="main-content">
+            <!-- A imagem é controlada e alternada pelo JavaScript -->
+            <img id="imagens/Templo de Campinas.webp" src="" alt="Templo de Campinas" class=hero-image>
+
+            <!-- Seção de Dados -->
+            <section class="info-card data-section">
+                <div class="card-title">Dados</div>
+                <div class="info-grid">
+                    <div class="label">Area:</div><div class="value">587,041 sq km</div>
+                    <div class="label">Population:</div><div class="value">27,691,018</div>
+                    <div class="label">Capital:</div><div class="value">Antananarivo</div>
+                    <div class="label">Languages:</div><div class="value">Malagasy, French</div>
+                    <div class="label">Currency:</div><div class="value">Malagasy Ariary</div>
+                    <div class="label">Time Zone:</div><div class="value">UTC+3</div>
+                    <div class="label">Calling Code:</div><div class="value">+261</div>
+                    <div class="label">Internet TLD:</div><div class="value">.mg</div>
+                </div>
+            </section>
+
+            <!-- Seção de Clima -->
+            <section class="info-card weather-section">
+                <div class="card-title">Clima</div>
+                
+                <!-- Ícone visível apenas no modo Mobile -->
+                <div class="weather-icon-container">
+                    <svg class="weather-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="10" fill="#f39c12"/>
+                        <path d="M24 8V12M24 36V40M8 24H12M36 24H40" stroke="#f39c12" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M44 44C44 38.48 39.52 34 34 34C32.93 34 31.9 34.17 30.94 34.48C29.15 31.75 26.06 30 22 30C15.37 30 10 35.37 10 42C10 42.34 10.02 42.68 10.05 43H44V44Z" fill="#bdc3c7"/>
+                        <path d="M20 48H44C49.52 48 54 43.52 54 38C54 32.78 50 28.5 44.92 28.05C43.3 23.37 38.86 20 33.6 20C27.56 20 22.51 24.4 21.43 30.18C20.96 30.06 20.49 30 20 30C14.48 30 10 34.48 10 40C10 45.52 14.48 48 20 48Z" fill="#95a5a6"/>
+                    </svg>
+                </div>
+
+                <div class="info-grid">
+                    <div class="label">Temperature:</div><div class="value">10 °C</div>
+                    <div class="label">Conditions:</div><div class="value">Partly Cloudy</div>
+                    <div class="label">Wind:</div><div class="value">5 km/h</div>
+                    <div class="label">Wind Chill:</div><div class="value">9.8 °C</div>
+                </div>
+            </section>
+        </div>
+        <div class="yellow-bar"></div>
+        <footer>
+            
+            <div>©2026 🚀 Fernando Luis Ferreira 🚀 Campinas - SP - Brasil</div>
+            <div id="last-modification">Last Modification: </div>
+        </footer>
+    </div>
+
+    <script src="tempo.js"></script>
+</body>
+</html>

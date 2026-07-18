@@ -2,61 +2,66 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WDD 131 – Local:Cidade de  Campinas -SP</title>
-    <meta name="description"content="Álbum do Templo de Campinas -SP- Brasil.">
+    <title>WDD 131 – Cidade de Campinas - SP - Brasil</title>
+    <meta name="description" content="Álbum do Templo de Campinas -SP- Brasil.">
     <meta name="author" content="Fernando Luis Ferreira">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/local.css">
-   
-
     <script src="scripts/local.js" defer></script>
 </head>
 
 <body>
-
+    
     <header>
-
-        <div class="cabeçalho">
-            <p>Cidade de Campinas -SP</p>
-            <button id="botao-menu" aria-label="Abrir menu">☰</button>
-        </div>
-        <nav>
-            <div class="locais"></div>
-            <ul>
-                <li>Bosque dos Jequitibás</li>
-                <li>Parque Portugal</li>
-                <li>Tribunal Regional do Trabalho da 15ª Região</li>
-                <li>Templo de Campinas</li>
-            </ul>
-            <div class="Clima"></div>
-            
-        </nav>
-
-    </header>
+        <p>Cidade de Campinas - SP - Brasil</p>
+    </header> 
 
     <main>
-        
-
         <figure>
+            
+            <source media="(max-width: 699px)" srcset="imagens/Templo de Campinas-pequeno.webp">
             <img src="imagens/Templo de Campinas.webp" alt="Templo de Campinas SP Brasil">
-            <figcaption>Campinas  SP Brasil</figcaption></figure>
-        
-        
+            <figcaption>Campinas SP Brasil</figcaption>
+        </figure>
 
+        <div class="container-section">
+            <section class="card-clima">
+                <h2 class="titulo-clima">
+                    <!-- Ícone SVG para mobile (oculto no desktop via CSS) -->
+                        🌦️
+                        <circle cx="12" cy="12" r="5" fill="yellow" stroke="orange" stroke-width="2"/>
+                        <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M16.96 16.96l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M16.96 7.04l1.42-1.42" stroke="orange" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Clima
+                </h2>
+                <ul class="clima">
+                    <li><strong>Temperatura:</strong> <span id="temp">8</span>°C</li>
+                    <li><strong>Condição:</strong> Ensolarado</li>
+                    <li><strong>Vento:</strong> <span id="vento">12</span> km/h</li>
+                    <li><strong>Sensação Térmica:</strong> <span id="sensacao"></span></li>
+                </ul>
+            </section>
+   
+            <section class="card-dados">
+                <h2>Dados da Cidade</h2>
+                <ul class="dados">
+                    <li><strong>População:</strong> 1.1 milhão</li>
+                    <li><strong>Fundação:</strong> 14 de Julho de 1774</li>
+                    <li><strong>Altitude:</strong> 685 metros</li>
+                    <li><strong>Estado:</strong> São Paulo</li>
+                </ul>
+            </section>
+        </div>  
     </main>
 
     <footer>
         <p>&copy; <span id="anoatual"></span> 🚀 Fernando Luis Ferreira   SP - Brasil 🚀 </p>
-       <p>Cidade de Campinas</p>
         <p id="ultimaModificacao"></p>
     </footer>
 
 </body>
-
 </html>
-

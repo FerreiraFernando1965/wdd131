@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #3324a9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #2f18e2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.yellow-bar {
+    background-color: #f2ee28;
+    height: 30px;
+    width: 100%;
+}
+
+/* Área da Imagem */
+.main-content {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Cartões de Informação */
+.info-card {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #2f18e2;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 8px 15px;
+    font-size: 0.95rem;
+}
+
+.label {
+    font-weight: bold;
+    text-align: right;
+}
+
+.value {
+    text-align: left;
+}
+
+/* Elementos do Clima */
+.weather-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.weather-icon {
+    width: 60px;
+    height: 60px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2f18e2;
+    color: rgb(238, 250, 7);
+    text-align: center;
+    padding: 15px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* =======================================================
+   REGRAS PARA DESKTOP (Telas maiores que 768px)
+   ======================================================= */
+@media (min-width: 769px) {
+    .hero-image {
+        height: 500px;
+    }
+
+    .info-card {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(3px);
+        border: 1px solid #2f18e2;
+        padding: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        width: 280px;
+    }
+
+    .card-title {
+        background-color: #2f18e2;
+        color: white;
+        text-align: left;
+        padding: 5px 10px;
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+
+    .data-section {
+        top: 30px;
+        left: 30px;
+    }
+
+    .weather-section {
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .info-grid {
+        font-size: 0.8rem;
+        gap: 5px 10px;
+    }
+
+    .weather-icon-container {
+        display: none;
+    }
+}
+
+/* =======================================================
+   REGRAS PARA MOBILE (Telas até 768px)
+   ======================================================= */
+@media (max-width: 768px) {
+    .data-section {
+        border-bottom: 1px solid #eee;
+    }
+}

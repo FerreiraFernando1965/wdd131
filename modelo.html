@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Fundamentos da Web Dinâmica. Página inicial  de Fernando Luis Ferreira, da disciplina Fundamentos da Web Dinâmica.">
+    <meta name="author" content="Fernando Luis Ferreira">
+    <title>Wireframe Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modelo.css">
+   <script src="modelo.js" defer></script>
+       
+</head>
+<body>
+
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <div class="place-title">Titulo</div>
+        </header>
+
+        <!-- Conteúdo Principal Dinâmico -->
+        <div class="main-content">
+            <div class="image">
+                <img src="imagens/Templo de Campinas.webp" alt="Templo da Cidade de Campinas - SP - Brasil">
+                
+            </div>
+
+            <div class="info-sections">
+                <!-- Seção Data -->
+                <section class="card card-data">
+                    <h2>Data</h2>
+                    <ul class="data-list" id="data-container">
+                        <!-- Gerado via JavaScript ou estático -->
+                        <li class="data-item"><span class="label">Label:</span> <span class="value">Value</span></li>
+                        <li class="data-item"><span class="label">Label:</span> <span class="value">Value</span></li>
+                        <li class="data-item"><span class="label">Label:</span> <span class="value">Value</span></li>
+                        <li class="data-item"><span class="label">Label:</span> <span class="value">Value</span></li>
+                        <li class="data-item"><span class="label">Label:</span> <span class="value">Value</span></li>
+                        <li class="data-item"><span class="label">Label:</span> <span class="value">Value</span></li>
+                    </ul>
+                </section>
+
+                <!-- Seção Weather -->
+                <section class="card card-weather">
+                    <h2>Weather</h2>
+                    <div class="weather-icon-box"></div>
+                    <ul class="data-list">
+                        <li class="data-item"><span class="label">Label:</span> <span class="value">Value</span></li>
+                        <li class="data-item"><span class="label">Label:</span> <span class="value">Value</span></li>
+                        <li class="data-item"><span class="label">Label:</span> <span class="value">Value</span></li>
+                        <li class="data-item"><span class="label">Label:</span> <span class="value">Value</span></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <footer>
+            <div>• copyright 🚀 Fernando Luis Ferreira 🚀 Campinas - Brasil</div>
+            <div>Última modificação: <span id="last-modified-date">--/--/----</span></div>
+        </footer>
+    </div>
+
+    
+</body>
+</html>
