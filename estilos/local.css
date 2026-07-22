@@ -18,6 +18,12 @@ header {
   font-size: 1.5rem;}
   
 
+  main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 15px;
+  
+    }
 
 .dados, .clima {
   list-style: none;
@@ -30,33 +36,22 @@ header {
   margin-bottom: 15px;
 }
 
-nav {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin-top: 15px;
-}
 
-main {
-  max-width: 800px;
-  margin: 40px;
-  padding: 0 15px;
-
-  }
 
 figure {
   background-color: blue;
   text-align: center;
   margin-bottom: 20px;
   overflow: hidden;
-
+  border-radius: 15px;
 }
 
 figure img {
   width: 100%;
   height: auto;
   display: block;
+  padding: 20px;
+  border-radius: 25px;
   transition: transform 0.3s ease;
 }
 
@@ -76,9 +71,17 @@ footer {
   padding: 1px;
   font-size: 17px;
   color:blue;
-  border: 15px solid blue
+  border: 15px solid blue;
+  border-radius: 25px; 
 
 }
+.icone-mobile{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
 @media (min-width: 700px) {
 
   header {
@@ -94,9 +97,13 @@ footer {
     margin-top: 20px;
   }
   ´container-section section {
-    flex: 1
+    flex: 1;
   }
-}
+
+  
+  }
+
+
   
 
   
