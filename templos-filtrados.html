@@ -1,48 +1,43 @@
+
 <!doctype html>
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WDD 131 – Álbum do Templo</title>
-    <meta name="description"content="Álbum do Templo de Campinas -SP- Brasil.">
+    <meta name="description" content="Álbum do Templo de Campinas - SP - Brasil.">
     <meta name="author" content="Fernando Luis Ferreira">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/templos-filtrados.css">
     
-
     <script src="scripts/templos-filtrados.js" defer></script>
 </head>
 
 <body>
 
     <header>
-
         <h1 class="handler">Álbum de Templos</h1>
-          
-            <a href="#" id="botao-menu" aria-label="Abrir menu"></a>
+        <button id="botao-menu" aria-label="Abrir menu">☰</button>
    
         <nav id="navmenu">
-            <a href="#" id="all">Página Inicial</a>
-            <a href="#"id="all">Antigo</a>
-            <a href="#"id="all">Novo</a>
-            <a href="#"id="large">Grande</a>
-            <a href="#"id="small">Pequeno</a>
+            <a href="#" id="all" class="active">Página Inicial</a>
+            <a href="#" id="old">Antigo</a>
+            <a href="#" id="new">Novo</a>
+            <a href="#" id="large">Grande</a>
+            <a href="#" id="small">Pequeno</a>
         </nav>
-
     </header>
-    <img src="" alt=""  class="lazy" loading="lazy">
-    <main>
-        <h2>Página Inicial</h2>
-        <div class="res-grid"></div>
 
+    <main>
+        <h2 id="titulo-filtro">Página Inicial</h2>
+        <div class="res-grid"></div>
     </main>
 
     <footer>
-        <p>&copy; <span id="anoatual"></span> 🚀 Fernando Luis Ferreira   SP - Brasil 🚀 </p>
+        <p>&copy; <span id="anoatual"></span> 🚀 Fernando Luis Ferreira — SP - Brasil 🚀 </p>
         <p id="ultimaModificacao"></p>
     </footer>
 

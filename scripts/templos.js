@@ -1,8 +1,13 @@
-var anoAtual = document.getElementById("anoatual");
-anoAtual.textContent = new Date().getFullYear();
+document.querySelector("#anoatual").textContent = new Date().getFullYear();
 
-var ultimaModificacao = document.getElementById("ultimaModificacao");
-ultimaModificacao.textContent = "Última modificação: " + document.lastModified;
+// Obtém a data da última modificação
+const dataModificacao = new Date(document.lastModified);
+
+// Formata para exibir APENAS a data (dia/mês/ano)
+const dataFormatada = dataModificacao.toLocaleDateString("pt-BR");
+
+// Exibe no rodapé apenas a data
+document.querySelector("#ultimaModificacao").textContent = `Última modificação: ${dataFormatada}`;
 
 var botaoMenu = document.getElementById("botao-menu");
 var menuNav = document.querySelector("nav");
