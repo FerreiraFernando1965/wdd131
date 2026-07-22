@@ -1,13 +1,13 @@
 
 
 
-// Atualização de rodapé
+// Atualização do ano no rodapé
 document.querySelector("#anoatual").textContent = new Date().getFullYear();
 
-// Obtém a data da última modificação
+// Fornece  a data da última modificação
 const dataModificacao = new Date(document.lastModified);
 
-// Formata para exibir APENAS a data (dia/mês/ano)
+// Formata para exibir APENAS a data (dia/mês/ano) Padrão brasileiro
 const dataFormatada = dataModificacao.toLocaleDateString("pt-BR");
 
 // Exibe no rodapé apenas a data
@@ -28,7 +28,7 @@ botaoMenu.addEventListener("click", () => {
   }
 });
 
-// Array de Templos
+// Array de Templos ( imagens de Templos obtidas no site da Igreja)
 const templos = [
   {
     nomeDoTemplo: "Aba Nigeria",
@@ -149,41 +149,41 @@ function getYear(consagracao) {
   return parseInt(consagracao.split(",")[0], 10);
 }
 
-// Eventos de Filtro
+// Eventos de Filtro   mostra todos as imagens 
 document.querySelector("#all").addEventListener("click", (e) => {
   e.preventDefault();
   toggleActive(e.target);
-  document.querySelector("#titulo-filtro").textContent = "Página Inicial";
+  document.querySelector("#titulo-filtro").textContent = "Álbum de Templos";
   createTemplateCard(templos);
 });
-
+ // filtro para Templos antigos  antes de 1º de janeiro de 1950 
 document.querySelector("#old").addEventListener("click", (e) => {
   e.preventDefault();
   toggleActive(e.target);
-  document.querySelector("#titulo-filtro").textContent = "Templos Antigos (Anteriores a 1900)";
+  document.querySelector("#titulo-filtro").textContent = "Templos Antigos (Anteriores a 1º de janeiro de 1950)";
   createTemplateCard(templos.filter(templo => getYear(templo.consagracao) < 1900));
 });
-
+ // Filtro para Templos novos depois de 1º de janeiro de 1950
 document.querySelector("#new").addEventListener("click", (e) => {
   e.preventDefault();
   toggleActive(e.target);
-  document.querySelector("#titulo-filtro").textContent = "Templos Novos (Construídos a partir de 2000)";
+  document.querySelector("#titulo-filtro").textContent = "Templos Novos (Construídos a partir de 1º de janeiro de 1950)";
   createTemplateCard(templos.filter(templo => getYear(templo.consagracao) >= 2000));
 });
-
+// filtro para Templos grandes, com mais de 50000 pés quadrados
 document.querySelector("#large").addEventListener("click", (e) => {
   e.preventDefault();
   toggleActive(e.target);
-  document.querySelector("#titulo-filtro").textContent = "Templos Grandes (Mais de 90.000 sq ft)";
-  createTemplateCard(templos.filter(templo => templo.area > 90000));
+  document.querySelector("#titulo-filtro").textContent = "Templos Grandes (Mais de 50.000 pés² )";
+  createTemplateCard(templos.filter(templo => templo.area > 50000));
 });
-
+// filtro para Templos pequenos, com menos de 50000 pés quadrados
 document.querySelector("#small").addEventListener("click", (e) => {
   e.preventDefault();
   toggleActive(e.target);
-  document.querySelector("#titulo-filtro").textContent = "Templos Pequenos (Menos de 10.000 sq ft)";
-  createTemplateCard(templos.filter(templo => templo.area < 10000));
+  document.querySelector("#titulo-filtro").textContent = "Templos Pequenos (Menos de 50.000 pés² )";
+  createTemplateCard(templos.filter(templo => templo.area < 50000));
 });
 
-// Exibe todos os templos na inicialização
+// Exibe todos os templos na inicialização Tem que ser colocado no final, caso contrário não apresenta as imagens.
 createTemplateCard(templos);
