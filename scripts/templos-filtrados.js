@@ -1,3 +1,55 @@
+var anoAtual = document.getElementById("anoatual");
+anoAtual.textContent = new Date().getFullYear();
+
+var ultimaModificacao = document.getElementById("ultimaModificacao");
+ultimaModificacao.textContent = "Última modificação: " + document.lastModified;
+
+var botaoMenu = document.getElementById("botao-menu");
+var menuNav = document.querySelector("nav");
+
+botaoMenu.addEventListener("click", function () {
+  menuNav.classList.toggle("show");
+
+  if (menuNav.classList.contains("show")) {
+    botaoMenu.textContent = "X";
+    botaoMenu.setAttribute("aria-label", "Fechar menu");
+  } else {
+    botaoMenu.textContent = "☰";
+    botaoMenu.setAttribute("aria-label", "Abrir menu");
+  }
+});
+
+
+
+document.querySelector(`#all`).addEventListener(`click`, () =>{
+  toggleActive(document.querySelector('#all'));
+  createTemplateCard(templos);
+});
+
+document.querySelector(`#old`).addEventListener(`click`, () =>{
+  toggleActive(document.querySelector('#old'));
+  createTemplateCard(templos.filter(templo => new Date(temple.dedicated) < new Date('1950-01-01')));
+});
+
+document.querySelector(`#new`).addEventListener(`click`, () =>{
+  toggleActive(document.querySelector('#new'));
+  createTemplateCard(templos.filter(templo => new Date(temple.dedicated) >= new Date('1950-01-01';
+});
+
+document.querySelector('#large').addEventListener(`click`, () =>{
+  toggleActive(document.querySelector('#large'));
+  createTemplateCard(templos.filter(templo => new Date(temple.area) >= 50000));});
+
+document.querySelector(`#small`).addEventListener(`click`, () =>{
+  toggleActive(document.querySelector('#small'));
+  createTemplateCard(templos.filter(templo => new Date(temple.area) < 50000));
+});
+
+
+
+
+
+
 const templos = [
   {
     nomeDoTemplo: "Aba Nigeria",
@@ -73,31 +125,4 @@ const templos = [
     area: 32032,
     urlDaImagem:"https://churchofjesuschristtemples.org/assets/img/temples/_temp/138-Manaus-Brazil-Temple.jpg"
    },
-   
-
-
-
-
-
 ]
-
-var anoAtual = document.getElementById("anoatual");
-anoAtual.textContent = new Date().getFullYear();
-
-var ultimaModificacao = document.getElementById("ultimaModificacao");
-ultimaModificacao.textContent = "Última modificação: " + document.lastModified;
-
-var botaoMenu = document.getElementById("botao-menu");
-var menuNav = document.querySelector("nav");
-
-botaoMenu.addEventListener("click", function () {
-  menuNav.classList.toggle("show");
-
-  if (menuNav.classList.contains("show")) {
-    botaoMenu.textContent = "X";
-    botaoMenu.setAttribute("aria-label", "Fechar menu");
-  } else {
-    botaoMenu.textContent = "☰";
-    botaoMenu.setAttribute("aria-label", "Abrir menu");
-  }
-});
