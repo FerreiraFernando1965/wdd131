@@ -78,42 +78,42 @@ const templos = [
     localizacao: "Madrid, Espanha",
     consagracao: "1999, 19 de março",
     area: 45800,
-    urlDaImagem: "https://churchofjesuschristtemples.org/assets/img/temples/_temp/056-Madrid-Spain-Temple.jpg"
+    urlDaImagem: "https://content.churchofjesuschristtemples.org/assets/img/temples/_temp/056-Madrid-Spain-Temple.jpg"
   },
   {
     nomeDoTemplo: "Campinas, Brasil",
     localizacao: "Campinas, Brasil",
     consagracao: "2002, 17 de maio",
     area: 48100,
-    urlDaImagem: "https://churchofjesuschristtemples.org/assets/img/temples/campinas-brazil-temple/campinas-brazil-temple-6012-main.jpg"
+    urlDaImagem: "https://content.churchofjesuschristtemples.org/assets/img/temples/campinas-brazil-temple/campinas-brazil-temple-6012-main.jpg"
   },
   {
     nomeDoTemplo: "Manaus, Brasil",
     localizacao: "Manaus, Brasil",
     consagracao: "2012, 10 de junho",
     area: 32032,
-    urlDaImagem: "https://churchofjesuschristtemples.org/assets/img/temples/_temp/138-Manaus-Brazil-Temple.jpg"
+    urlDaImagem: "https://content.churchofjesuschristtemples.org/assets/img/temples/_temp/138-Manaus-Brazil-Temple.jpg"
   },
   {
     nomeDoTemplo: "Anchorage, Alaska",
     localizacao: "Alaska, Estados Unidos",
     consagracao: "2004, 09 de janeiro",
     area: 32032,
-    urlDaImagem: "https://churchofjesuschristtemples.org/assets/img/temples/anchorage-alaska-temple/anchorage-alaska-temple-57454-main.jpg"
+    urlDaImagem: "https://content.churchofjesuschristtemples.org/assets/img/temples/anchorage-alaska-temple/anchorage-alaska-temple-57454-main.jpg"
   },
   {
     nomeDoTemplo: "Logan, Utah",
     localizacao: "Utah, Estados Unidos",
     consagracao: "1884, 17 de maio",
     area: 32032,
-    urlDaImagem: "https://churchofjesuschristtemples.org/assets/img/temples/logan-utah-temple/logan-utah-temple-40550-main.jpg"
+    urlDaImagem: "https://content.churchofjesuschristtemples.org/assets/img/temples/logan-utah-temple/logan-utah-temple-40550-main.jpg"
   },
   {
     nomeDoTemplo: "Idaho Falls, Idaho",
     localizacao: "Idaho, Estados Unidos",
     consagracao: "1945, 23 de setembro",
     area: 32032,
-    urlDaImagem: "https://churchofjesuschristtemples.org/assets/img/temples/idaho-falls-idaho-temple/idaho-falls-idaho-temple-55801-main.jpg"
+    urlDaImagem: "https://content.churchofjesuschristtemples.org/assets/img/temples/idaho-falls-idaho-temple/idaho-falls-idaho-temple-55801-main.jpg"
   }
 ];
 
