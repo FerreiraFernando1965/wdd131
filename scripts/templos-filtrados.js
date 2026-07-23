@@ -1,6 +1,5 @@
 
 
-
 // Atualização do ano no rodapé
 document.querySelector("#anoatual").textContent = new Date().getFullYear();
 
