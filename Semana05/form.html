@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação do Produto</title>
+  <link rel="stylesheet" href="estilos/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+
+  <header class="Avaliação">
+    <h1>Avaliação do Produto</h1>
+  </header>
+
+  <main class="form-container">
+    <form action="#" method="GET" novalidate>
+
+      <!-- Nome do Produto -->
+      <div class="form-group">
+        <label for="produto">Nome do Produto</label>
+        <select id="produto" name="produto" required>
+          <option value="" disabled selected hidden>Escolha um Produto ...</option>
+        </select>
+      </div>
+
+      <!-- Classificação Geral -->
+      <div class="form-group">
+        <span class="group-label">Classificação Geral</span>
+        <div class="rating-group">
+          <div class="star-rating">
+            <span class="estrelas">☆</span>
+            <input type="radio" id="rating1" name="classificacao" value="1" required>
+          </div>
+          <div class="star-rating">
+            <span class="estrelas">☆☆</span>
+            <input type="radio" id="rating2" name="classificacao" value="2">
+          </div>
+          <div class="star-rating">
+            <span class="estrelas">☆☆☆</span>
+            <input type="radio" id="rating3" name="classificacao" value="3">
+          </div>
+          <div class="star-rating">
+            <span class="estrelas">☆☆☆☆</span>
+            <input type="radio" id="rating4" name="classificacao" value="4">
+          </div>
+          <div class="star-rating">
+            <span class="estrelas">☆☆☆☆☆</span>
+            <input type="radio" id="rating5" name="classificacao" value="5">
+          </div>
+        </div>
+      </div>
+
+      <!-- Data de Instalação -->
+      <div class="form-group">
+        <label for="data-instalacao">Data de Instalação</label>
+        <input type="date" id="data-instalacao" name="dataInstalacao" required>
+      </div>
+
+      <!-- Recursos do Produto -->
+      <div class="form-group">
+        <span class="group-label">Quais recursos você achou úteis no produto?</span>
+        <span class="sub-label">(Marque todos que se aplicam)</span>
+        <div class="checkbox-group">
+          <div class="checkbox-item">
+            <input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade">
+            <label for="durabilidade">Durabilidade</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="facilidade" name="recursos" value="Facilidade de Uso">
+            <label for="facilidade">Facilidade de Uso</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="desempenho" name="recursos" value="Desempenho">
+            <label for="desempenho">Desempenho</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="design" name="recursos" value="Design">
+            <label for="design">Design</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avaliação Escrita -->
+      <div class="form-group">
+        <label for="avaliacao-escrita">Avaliação Escrita <span class="opcional">(Opcional)</span></label>
+        <textarea id="avaliacao-escrita" name="avaliacaoEscrita" rows="4"></textarea>
+      </div>
+
+      <!-- Nome de Usuário -->
+      <div class="form-group">
+        <label for="nome-usuario">Seu Nome <span class="opcional">(Opcional)</span></label>
+        <input type="text" id="nome-usuario" name="nomeUsuario">
+      </div>
+
+      <div id="mensagem-agradecimento" style="display: none;" class="mensagem-sucesso">
+        <h2> Obrigado pela sua avaliação!</h2>
+        <p>Sua opinião é muito importante para nós.</p>
+      </div>
+
+      <!-- Botão de Envio -->
+      <input type="submit" id="btn-submit" name="btnSubmit" value="Publicar Avaliação" class="btn-submit">
+
+    </form>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; <span id="anoatual"></span>🚀Fernando Luis Ferreira - Campinas SP-Brasil🚀</p>
+    <p id="ultimaModificacao"></p>
+  </footer>
+
+</body>
+</html>
