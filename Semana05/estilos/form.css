@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #e9ead5;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,9 +40,10 @@ footer {
 
 footer {
   padding: 15px 10px;
-  margin-top: 25px;
+  margin-top: 15px;
   font-size: 13px;
   line-height: 1.4;
+  border-radius: 5px;
 }
 
 /* Container do Formulário */
@@ -54,11 +55,11 @@ footer {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.form-group {
+.form-grupo {
   margin-bottom: 18px;
 }
 
-label, .group-label {
+label, .grupo-label {
   display: block;
   font-weight: bold;
   color: #000;
@@ -87,7 +88,7 @@ textarea {
   width: 100%;
   padding: 8px 10px;
   border: 1px solid #aaa;
-  border-radius: 2px;
+  border-radius: 5px;
   background-color: #fff;
   font-size: 14px;
   outline: none;
@@ -106,40 +107,40 @@ textarea {
 }
 
 /* Estrelas e Radio Buttons */
-.rating-group {
+.avaliação-grupo {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding: 5px 0;
 }
 
-.star-rating {
+.avaliação-estrela {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
 }
 
-.star-rating .estrelas {
+.avaliação-estrela .estrelas {
   font-size: 12px;
   letter-spacing: -1px;
 }
 
-.star-rating input[type="radio"],
+.avaliação-estrela input[type="radio"],
 .checkbox-item input[type="checkbox"] {
   cursor: pointer;
 }
 
-.star-rating input[type="radio"] {
+.avaliação-estrela input[type="radio"] {
   width: 22px;
   height: 22px;
 }
 
 /* Checkboxes */
-.checkbox-group {
+.checkbox-grupo {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .checkbox-item {
@@ -181,7 +182,7 @@ textarea {
   .Avaliação,
   .form-container,
   footer {
-    max-width: 550px; /* Aumenta a largura em telas de tablet e desktop */
+    max-width: 600px; /* Aumenta a largura em telas de tablet e desktop */
   }
 
   .form-container {
