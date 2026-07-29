@@ -1,109 +1,103 @@
-<!doctype html>
+
+
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="description" content="Preencha">
-<meta name="author" content="John Doe">
-
-
-<title>Site inicial por Fernando Luis Ferreira</title>
-
-<!-- INFORMA AO CELULAR QUE NÃO DEVE MENTIR SOBRE SUA LARGURA E IMPEDE QUE A FONTE AUMENTE QUANDO O CELULAR É VIRADO DE LADO -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-<!-- FOLHAS DE ESTILO -->
-<link href="css/normalize.css" rel="stylesheet">
-<!-- celular padrão -->
-<link href="css/pequeno.css" rel="stylesheet">
-<!-- melhoria para tablet -->
-<link href="css/medio.css" rel="stylesheet">
-<!-- melhoria para desktop -->
-<link href="css/grande.css" rel="stylesheet">
-
-<script src="scripts/formulario.js" defer></script>
-     
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação do Produto</title>
+  <link rel="stylesheet" href="estilos/formulario.css">
+  <script src="scripts/formulario.js" defer></script>
 </head>
 <body>
-<!-- CABEÇALHO AQUI -->
-	<header>
-        <h1>Proposta de Curso</h1>
-        <h2>Design de Formulários Web</h2>
-    </header>
-    
-    
-<!-- NAVEGAÇÃO AQUI -->
-    <nav>
-        <ul>
-            <li><a href="#">Sobre</a></li>
-            <li class="ativo"><a href="#">Propor</a></li>
-            <li><a href="#">Vencedores</a></li>
-            <li><a href="#">Contato</a></li>    
-        </ul>
-    </nav>
-    
-    
-<!-- CONTEÚDO AQUI -->
-<main>
-    <h1>Formulário de Proposta de Curso</h1>
-    <form method="GET" action="obrigado.html">
-        <fieldset>
-            <legend>Informações do Candidato</legend>
-            <!--a tag label torna o campo ativo quando clicado e required torna o 
-            o campo com preenchimento obrigatório-->
-            <label>Nome:*<input type="text" name="nome" required></label>
-            <label>Sobrenome:*<input type="text" name="sobrenome" required></label>
-            <label>Telefone<input type="tel" name="fone" placeholder="1234567890"></label>
-            <label>Email:*<input type="email" name="email" placeholder="alguem@gmail.com" required></label>
-            <label>Website:<input type="url" name="url" placeholder="http://"></label>
-        </fieldset>
 
-        <fieldset>
-            <legend>Informações do curso</legend>
-            <div>Público-Alvo</div>
-            <label><input type="radio" name="publico" value="iniciante">Iniciante</label>       
-            <label><input type="radio" name="publico" value="intermediário">Intermediário</label>
-            <label><input type="radio" name="publico" value="avançado">Avançado</label>
+  <header class="Avaliação">
+    <h1>Avaliação do Produto</h1>
+  </header>
 
-            <div>Software necessário</div>
-            <label><input type="checkbox" name="edição" value="sim">Edição de Fotos</label>
-            <label><input type="checkbox" name="programação" value="sim">Programação</label>
-            <label><input type="checkbox" name="processador" value="sim">Pré-processador</label>
-            <label><input type="checkbox" name="cliente" value="sim">Cliente FTP</label>
-        </fieldset>
+  <main class="form-container">
+    <form action="avaliacao.html" method="GET">
 
-        <fieldset>
-            <legend>Financiamento</legend>
-            <label>Data prevista de conclusão <input type="date" name="data"></label>
+      <div class="form-grupo">
+        <label for="produto">Nome do Produto</label>
+        <select id="produto" name="produto" required>
+          <option value="" disabled selected hidden>Selecione um Produto...</option>
+        </select>
+      </div>
 
-            <label>Área do Curso
-                <select name="tema">
-                    <option value="">Selecione</option>>
-                    <option value="criativo">Profissional criativo</option>
-                    <option value="ti">Tecnologia da Informação</option>
-                    <option value="data">Analista de dados</option>
-                    <option value="construção">Construção</option>
-                    <option value="manufatura">Manufatura</option>
-                    <option value="negocios">Nrgócios</option>
-                    <option value="segurança">Segutança Cibernética</option>
+      <div class="form-grupo">
+        <span class="grupo-label">Classificação Geral</span>
+        <div class="avaliação-grupo">
+          <div class="avaliação-estrela">
+            <label for="rating1" class="estrelas">☆</label>
+            <input type="radio" id="rating1" name="classificacao" value="1" required>
+          </div>
+          <div class="avaliação-estrela">
+            <label for="rating2" class="estrelas">☆☆</label>
+            <input type="radio" id="rating2" name="classificacao" value="2" required>
+          </div>
+          <div class="avaliação-estrela">
+            <label for="rating3" class="estrelas">☆☆☆</label>
+            <input type="radio" id="rating3" name="classificacao" value="3" required>
+          </div>
+          <div class="avaliação-estrela">
+            <label for="rating4" class="estrelas">☆☆☆☆</label>
+            <input type="radio" id="rating4" name="classificacao" value="4" required>
+          </div>
+          <div class="avaliação-estrela">
+            <label for="rating5" class="estrelas">☆☆☆☆☆</label>
+            <input type="radio" id="rating5" name="classificacao" value="5" required>
+          </div>
+        </div>
+      </div>
 
-            </select> 
-            <label>Quantidade de autores <input type="number" name="autores"></label>       
-            </label>
-        </fieldset>
+      <div class="form-grupo">
+        <label for="data-instalacao">Data de Instalação</label>
+        <input type="date" id="data-instalacao" name="dataInstalacao" required>
+      </div>
 
-        <input type="submit" value="Propor meu curso">
+      <div class="form-grupo">
+        <span class="grupo-label">Recursos Úteis</span>
+        <span class="sub-label">(Marque todos que se aplicam)</span>
+        <div class="checkbox-grupo">
+          <div class="checkbox-item">
+            <input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade">
+            <label for="durabilidade">Durabilidade</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="facilidade" name="recursos" value="Facilidade de Uso">
+            <label for="facilidade">Facilidade de Uso</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="desempenho" name="recursos" value="Desempenho">
+            <label for="desempenho">Desempenho</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="design" name="recursos" value="Design">
+            <label for="design">Design</label>
+          </div>
+        </div>
+      </div>
 
+      <div class="form-grupo">
+        <label for="avaliacao-escrita">Avaliação Escrita <span class="opcional">(Opcional)</span></label>
+        <textarea id="avaliacao-escrita" name="avaliacaoEscrita" rows="4"></textarea>
+      </div>
 
+      <div class="form-grupo">
+        <label for="nome-usuario">Seu Nome <span class="opcional">(Opcional)</span></label>
+        <input type="text" id="nome-usuario" name="nomeUsuario">
+      </div>
 
+      <input type="submit" id="btn-submit" name="btnSubmit" value="Publicar Avaliação" class="btn-submit">
 
     </form>
-</main>
-    
-<!-- RODAPÉ AQUI -->   
-    <footer>
-       <p>&copy; <span id="anoatual"></span> 🚀 Fernando Luis Ferreira - Campinas SP-Brasil 🚀 </p>
-        <p id="ultimaModificacao"></p>
-    </footer>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="anoatual"></span> 🚀 Fernando Luis Ferreira - Campinas SP-Brasil 🚀</p>
+    <p id="ultimaModificacao"></p>
+  </footer>
 
 </body>
 </html>

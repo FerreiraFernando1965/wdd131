@@ -47,37 +47,37 @@
 //   });
 // });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.querySelector('form');
-  const mensagemAgradecimento = document.getElementById('mensagem-agradecimento');
-  const btnSubmit = document.getElementById('btn-submit');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const form = document.querySelector('form');
+//   const mensagemAgradecimento = document.getElementById('mensagem-agradecimento');
+//   const btnSubmit = document.getElementById('btn-submit');
 
-  form.addEventListener('submit', (event) => {
-    // 1. Impede o recarregamento da página
-    event.preventDefault();
+//   form.addEventListener('submit', (event) => {
+//     // 1. Impede o recarregamento da página
+//     event.preventDefault();
 
-    // 2. Valida se os campos obrigatórios foram preenchidos (caso o novalidate do form esteja ativo)
-    if (form.checkValidity()) {
-      // 3. Exibe a mensagem de agradecimento
-      mensagemAgradecimento.style.display = 'block';
+//     // 2. Valida se os campos obrigatórios foram preenchidos (caso o novalidate do form esteja ativo)
+//     if (form.checkValidity()) {
+//       // 3. Exibe a mensagem de agradecimento
+//       mensagemAgradecimento.style.display = 'block';
 
-      // 4. (Opcional) Esconde o botão ou reseta o formulário
-      btnSubmit.style.display = 'none';
-      form.reset();
-    } else {
-      // Força o navegador a mostrar as mensagens nativas de validação
-      form.reportValidity();
-    }
-  });
+//       // 4. (Opcional) Esconde o botão ou reseta o formulário
+//       btnSubmit.style.display = 'none';
+//       form.reset();
+//     } else {
+//       // Força o navegador a mostrar as mensagens nativas de validação
+//       form.reportValidity();
+//     }
+//   });
 
-  // Atualizar ano atual e última modificação no rodapé
-  const anoAtualSpan = document.getElementById('anoatual');
-  if (anoAtualSpan) {
-    anoAtualSpan.textContent = new Date().getFullYear();
-  }
+//   // Atualizar ano atual e última modificação no rodapé
+//   const anoAtualSpan = document.getElementById('anoatual');
+//   if (anoAtualSpan) {
+//     anoAtualSpan.textContent = new Date().getFullYear();
+//   }
 
-  const ultimaModificacaoP = document.getElementById('ultimaModificacao');
-  if (ultimaModificacaoP) {
-    ultimaModificacaoP.textContent = `Última modificação: ${document.lastModified}`;
-  }
-});
+//   const ultimaModificacaoP = document.getElementById('ultimaModificacao');
+//   if (ultimaModificacaoP) {
+//     ultimaModificacaoP.textContent = `Última modificação: ${document.lastModified}`;
+//   }
+// });

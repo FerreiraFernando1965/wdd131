@@ -24,7 +24,7 @@ footer {
 /* Cabeçalho e Rodapé */
 .Avaliação,
 footer {
-  background-color: #2a0826;
+  background-color: #13aa2c;
   color: #fff;
   text-align: center;
 }
@@ -136,7 +136,7 @@ textarea {
   height: 22px;
 }
 
-/* Checkboxes */
+ Checkboxes 
 .checkbox-grupo {
   display: flex;
   flex-direction: column;
@@ -188,4 +188,4 @@ textarea {
   .form-container {
     padding: 35px 30px; /* Mais espaçamento interno */
   }
-}
+ }
