@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoMendes Pizzaria - Contato & Sobre Nós</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-main">DoMendes</span>
+                <span class="logo-sub">pizzaria</span>
+            </a>
+
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="contato.html" class="active">Contato & Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contato & Nossa História</h1>
+            <p>Conheça a história da DoMendes Pizzaria e saiba como nos encontrar</p>
+        </div>
+    </section>
+
+    <main class="container contact-page">
+        <!-- História e Propósito -->
+        <section class="about-section">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Nossa História</h2>
+                    <p>A <strong>DoMendes Pizzaria</strong> nasceu da paixão dos seus fundadores por criar momentos inesquecíveis ao redor da mesa. Focamos na altíssima qualidade dos ingredientes, massa fresca preparada diariamente e um atendimento acolhedor.</p>
+                    <p>Seja para saborear uma pizza crocante no nosso salão, divertir a garotada no nosso <strong>Espaço Kids</strong>, se deliciar com o nosso famoso <strong>Açaí com Sorvete</strong> ou pedir um delivery rápido na comodidade da sua casa, a DoMendes é o lugar certo!</p>
+                </div>
+                <div class="about-img">
+                    <img src="images/frente_clareada.png" alt="Atendimento DoMendes Pizzaria">
+                </div>
+            </div>
+        </section>
+
+        <!-- Informações de Contato e Dúvidas Frequentes -->
+        <section class="contact-grid-section">
+            <div class="contact-card">
+                <h3>📍 Informações & Atendimento</h3>
+                <ul class="contact-list">
+                    <li><strong>WhatsApp:</strong> (19) 98198-5015</li>
+                    <li><strong>Instagram:</strong> @domendes_pizzaria</li>
+                    <li><strong>Domínio:</strong> domendespipizzaria.com.br</li>
+                    <li><strong>Horário:</strong> Terça a Domingo, das 18h às 23h30</li>
+                    <li><strong>Modalidades:</strong> Consumo no local & Delivery</li>
+                </ul>
+                <br>
+                <a href="https://wa.me/5519981985015" target="_blank" class="btn btn-primary" style="display:inline-block; text-align:center; width:100%;">Falar no WhatsApp</a>
+            </div>
+
+            <div class="contact-card">
+                <h3>❓ Dúvidas Frequentes (Cenários)</h3>
+                <div class="faq-item">
+                    <h4>"Quais são os sabores de pizza e os preços?"</h4>
+                    <p>Temos mais de 20 opções de pizzas salgadas e doces com preços a partir de R$ 44,00. Confira nossa página de <a href="cardapio.html" style="color:var(--vermelho); font-weight:bold;">Cardápio</a> para ver a lista completa.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>"Qual é o horário de funcionamento e formas de pedido?"</h4>
+                    <p>Funcionamos de terça a domingo das 18h às 23h30. Você pode pedir direto pelo WhatsApp para entrega rápida ou vir nos visitar no local.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>DoMendes Pizzaria</h3>
+                <p>Telefone / WhatsApp: (19) 98198-5015</p>
+                <p>Instagram: @domendes_pizzaria</p>
+            </div>
+            <div class="footer-meta">
+                <p>&copy; <span id="year"></span> DoMendes Pizzaria. Todos os direitos reservados.</p>
+                <p>Desenvolvido para o projeto WDD 131.</p>
+                <p>Última Atualização: <span id="last-updated"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
