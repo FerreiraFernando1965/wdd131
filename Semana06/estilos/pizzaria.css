@@ -19,6 +19,14 @@ header {
   position: relative;
 }
 
+.logo-header {
+    /* Diminui a largura da imagem (ajuste esse valor como preferir) */
+    width: 80px; 
+        /* Garante que a imagem mantenha a proporção original */
+    height: auto; 
+        /* Gira a imagem em 180 graus */
+    transform: rotate(90deg);
+    margin-right: 10px; }
 #botao-menu {
   background: none;
   border: none;

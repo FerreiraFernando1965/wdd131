@@ -9,13 +9,14 @@
   <meta name="author" content="Fernando Luis Ferreira">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Revisão de Produto</title>
-  <link rel="stylesheet" href="estilos/formulario.css">
+  <link rel="stylesheet" href="formulario.css">
   <script src="scripts/formulario.js" defer></script>
 </head>
 <body>
 
   <header class="Avaliação">
-    <h1>Avaliação do Produto</h1>
+    <h1>Avaliação da DoMendes</h1>
+    <p>Faça seu cadastro e avaliação para participar de nossas promoções</p>
   </header>
 
   <main class="form-container">
@@ -24,7 +25,7 @@
       <div class="form-grupo">
         <label for="produto">Nome do Produto</label>
         <select id="produto" name="produto" required>
-          <option value="" disabled selected >"Selecione um produto..."</option>
+          <option value="" disabled selected >"Selecione um item..."</option>
         </select>
       </div>
 
@@ -32,67 +33,73 @@
         <span class="grupo-label">Classificação Geral</span>
         <div class="avaliação-grupo">
           <div class="avaliação-estrela">
-            <input type="radio" id="rating1" name="classificacao" value="1" required>
             <label for="rating1" class="estrelas">☆</label>
+            <input type="radio" id="rating1" name="classificacao" value="1" required>
           </div>
           <div class="avaliação-estrela">
-            <input type="radio" id="rating2" name="classificacao" value="2" required>
             <label for="rating2" class="estrelas">☆☆</label>
+            <input type="radio" id="rating2" name="classificacao" value="2" required>
           </div>
           <div class="avaliação-estrela">
-            <input type="radio" id="rating3" name="classificacao" value="3" required>
             <label for="rating3" class="estrelas">☆☆☆</label>
+            <input type="radio" id="rating3" name="classificacao" value="3" required>
           </div>
           <div class="avaliação-estrela">
-            <input type="radio" id="rating4" name="classificacao" value="4" required>
             <label for="rating4" class="estrelas">☆☆☆☆</label>
+            <input type="radio" id="rating4" name="classificacao" value="4" required>
           </div>
           <div class="avaliação-estrela">
-            <input type="radio" id="rating5" name="classificacao" value="5" required>
             <label for="rating5" class="estrelas">☆☆☆☆☆</label>
+            <input type="radio" id="rating5" name="classificacao" value="5" required>
           </div>
         </div>
       </div>
 
       <div class="form-grupo">
-        <label for="data-instalacao">Data de Instalação</label>
+        <label for="data-instalacao">Data da Avaliação</label>
         <input type="date" id="data-instalacao" name="dataInstalacao" required>
       </div>
 
       <div class="form-grupo">
-        <span class="grupo-label">Recursos Úteis</span>
+        <span class="grupo-label">Opção de escolha</span>
         <span class="sub-label">(Marque todos que se aplicam)</span>
         <div class="checkbox-grupo">
           <div class="checkbox-item">
             <input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade">
-            <label for="durabilidade">Durabilidade</label>
+            <label for="durabilidade">Sabor</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="facilidade" name="recursos" value="Facilidade de Uso">
-            <label for="facilidade">Facilidade de Uso</label>
+            <label for="facilidade">Apresentação</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="desempenho" name="recursos" value="Desempenho">
-            <label for="desempenho">Desempenho</label>
+            <label for="desempenho">Atendimento</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="design" name="recursos" value="Design">
-            <label for="design">Design</label>
+            <label for="design">Limpeza</label>
           </div>
         </div>
       </div>
 
       <div class="form-grupo">
-        <label for="avaliacao-escrita">Avaliação Escrita <span class="opcional">(Opcional)</span></label>
+        <label for="avaliacao-escrita">Sugestão ou Reclamação <span class="opcional">(Opcional)</span></label>
         <textarea id="avaliacao-escrita" name="avaliacaoEscrita" rows="4"></textarea>
       </div>
 
       <div class="form-grupo">
-        <label for="nome-usuario">Seu Nome <span class="opcional">(Opcional)</span></label>
-        <input type="text" id="nome-usuario" name="nomeUsuario">
+        <label for="nome-usuario">Seu Nome<span class="required">* Importante</span></label>
+        <input type="text" id="nome-usuario" name="nomeUsuario"  required>
+        <label for="sobrenome">Sobrenome<span class="required">* Importante</span></label>
+        <input type="text" id="sobrenome" name="sobrenome"  required>
+        <label for="telefone">Telefone<span class="required">* Importante</span></label>
+        <input type="tel" id="telefone" name="telefone" required>
+        <label for="email">Seu email<span class="required">* Importante</span></label>
+        <input type="email" id="email" name="email" required>
       </div>
 
-      <input type="submit" value="Publicar Avaliação" class="btn-submit">
+      <input type="submit" id="btn-submit" name="btnSubmit" value="Publicar Avaliação" class="btn-submit">
 
     </form>
   </main>
@@ -103,5 +110,4 @@
   </footer>
 
 </body>
-</html> 
-
+</html>
