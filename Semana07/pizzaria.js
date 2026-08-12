@@ -5,7 +5,7 @@ const pizzas = [
         categoria: "salgada",
         ingredientes: "Peito de frango desfioado, coberto com requeijão catupiry e azeitonas.",
         preco: "R$ 48,00",
-        imagem: "frango sem fundo.webp"
+        imagem: "frango.webp"
     },
     {
         nome: "Bacon Especial",
@@ -26,7 +26,7 @@ const pizzas = [
         categoria: "salgada",
         ingredientes: "Carne seca desfiada, queijo coalho em cubos, catupiry e pimenta biquinho.",
         preco: "R$ 56,00",
-        imagem: "carne seca sem fundo.webp"
+        imagem: "carne seca.webp"
     },
     {
         nome: "Brócolis com Requeijão",

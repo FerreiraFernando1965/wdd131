@@ -187,6 +187,15 @@ h2 {
     color: var(--cor-texto);
     margin-bottom: 1rem;
     flex-grow: 1;
+
+.card-pizza img {
+  mix-blend-mode: multiply;
+  
+  /* Garantias visuais para o layout */
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 }
 
 .preco {
@@ -198,6 +207,9 @@ h2 {
 
 /* Rodapé */
 .footer-site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--cor-vermelho);
     color: var(--cor-amarelo);
     text-align: center;
@@ -206,11 +218,14 @@ h2 {
     border-top: 3px solid var(--cor-amarelo);
 }
 
+.footer-site a {
+    margin: 0;
+}
 /* Responsive Desktop */
 @media (min-width: 768px) {
     .hamburger-btn {
         display: none;
-    }
+    } 
 
     .nav-menu {
         display: block;
@@ -233,7 +248,19 @@ h2 {
     .grid-cardapio {
         grid-template-columns: repeat(2, 1fr);
     }
-}
+
+    
+   .footer-site {
+        flex-direction: row;
+        white-space: nowrap;}
+
+    .footer-site p:not(:last-child)::after {
+          content: "|";
+           margin-left: 0.5rem;
+           color: var(--cor-amarelo);
+           opacity: 0.7;
+    }
+}   
 
 @media (min-width: 1024px) {
     .grid-cardapio {
@@ -241,19 +268,5 @@ h2 {
     }
 }
 
-.footer-site {
-        display: flex;
-        flex-direction: row;       /* Coloca os elementos lado a lado */
-        justify-content: center;   /* Centraliza o conteúdo horizontalmente */
-        align-items: center;       /* Alinha verticalmente no centro */
-        gap: 0.5rem;               /* Espaçamento entre as frases/separadores */
-        white-space: nowrap;       /* Impede a quebra de linha automática */
-    }
-
-    /* Remove margens padrão dos parágrafos do rodapé */
-    .footer-site p {
-        margin: 0;
-        display: inline-flex;
-        align-items: center;
-    }
-
+  
+      
