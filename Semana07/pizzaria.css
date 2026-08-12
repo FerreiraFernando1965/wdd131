@@ -1,5 +1,4 @@
 
-
 :root {
     --cor-vermelho: #B22222;
     --cor-amarelo: #D4AF37;
@@ -24,21 +23,17 @@ body {
     line-height: 1.6;
 }
 
-/* Tipografia dos Títulos usando Roboto conforme especificado */
-h1,h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
     font-family: var(--fonte-titulos);
     color: var(--cor-vermelho);
 }
-h2{
+
+h2 {
     font-family: var(--fonte-titulos);
     color: var(--cor-amarelo);
 }
 
-/* ==========================================================================
-   LAYOUT MOBILE-FIRST (Estilos Padrão para Telas Pequenas)
-   ========================================================================== */
-
-/* Cabeçalho e Navegação Mobile */
+/* Header & Navegação */
 .header-site {
     background-color: var(--cor-vermelho);
     color: var(--cor-amarelo);
@@ -64,9 +59,9 @@ h2{
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: var(--cor-branco);
 }
 
-/* Menu Hambúrguer em CSS Puro */
 .menu-toggle {
     display: none;
 }
@@ -100,7 +95,6 @@ h2{
 
 .nav-menu ul {
     list-style: none;
-    padding: 0;
 }
 
 .nav-menu li a {
@@ -113,168 +107,109 @@ h2{
     text-align: center;
 }
 
-.nav-menu li a:hover {
-    background-color: rgba(0, 0, 0, 0.15);
-    color: var(--cor-amarelo);
-}
-
-/* Exibir menu ao marcar o checkbox */
 .menu-toggle:checked ~ .nav-menu {
     display: block;
 }
 
-/* Banner Principal (Hero) */
-.hero-banner {
-    background: var(--cor-vermelho);
-    color: var(--cor-branco);
-    padding: 3rem 1.5rem;
-    text-align: center;
-    border: 8px solid var(--cor-amarelo);
-    background-image: url('img/frente\ clareada.webp');
-    
-    /* Garante que a imagem cubra toda a área sem repetir */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    /* Ajustes de altura e centralização do conteúdo */
-    min-height: 100vh; /* Ocupa 80% da altura da tela */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #ffffff; /* Deixa os textos brancos para destacar*/
-
-}
-
-
-
-.hero-content h2 {
-    color: var(--cor-amarelo);
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.hero-content p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-}
-
-
-
-/* Conteúdo Principal */
+/* Layout Principal */
 .main-content {
     padding: 1.5rem 1rem;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-section {
-    margin-bottom: 2.5rem;
-    background: var(--cor-vermelho);
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid var(--cor-amarelo);
-}
-
-section h2 {
+.secao-cardapio h2 {
     text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid var(--cor-amarelo);
-    padding-bottom: 0.5rem;
-}
-
-.subtitulo {
-    text-align: center;
+    font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    font-style: italic;
 }
 
-/* Cards do Cardápio */
+/* Filtros */
+.filtros-cardapio {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-filtro {
+    background-color: transparent;
+    color: var(--cor-branco);
+    border: 2px solid var(--cor-amarelo);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-family: var(--fonte-titulos);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-filtro.active, .btn-filtro:hover {
+    background-color: var(--cor-amarelo);
+    color: var(--cor-vermelho);
+    font-weight: bold;
+}
+
+/* Grid de Pizzas */
 .grid-cardapio {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .card-pizza {
     background-color: var(--cor-amarelo);
+    border-radius: 8px;
     padding: 1rem;
-    border-radius: 6px;
-    border-left: 4px solid var(--cor-vermelho);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.card-pizza img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    border-radius: 50%;
 }
 
 .card-pizza h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.3rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
 }
 
 .card-pizza p {
-    font-size: 1.1rem;
-     font-weight: bold;
-    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    color: var(--cor-texto);
+    margin-bottom: 1rem;
+    flex-grow: 1;
 }
 
 .preco {
     font-family: var(--fonte-titulos);
     font-weight: bold;
     color: var(--cor-vermelho);
-    font-size: 1.2rem;
-    align-self: flex-end;
-}
-
-/* Seção de Diferenciais e Infos */
-.diferenciais-list, .info-grid {
-    background-color: var(--cor-amarelo);   
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;}
-
-.info-block p {
-    font-size: 1rem;
-    padding: 1rem;
-    margin: 1px;
-}
-
-
-.diferencial-item, .info-block {
-    text-align: center;
-    padding: 0.5rem;
-}
-
-.diferencial-item h3, .info-block h3 {
-    margin-bottom: 0.4rem;
+    font-size: 1.3rem;
 }
 
 /* Rodapé */
 .footer-site {
-    
     background-color: var(--cor-vermelho);
     color: var(--cor-amarelo);
     text-align: center;
     padding: 1.5rem 1rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border-top: 3px solid var(--cor-amarelo);
 }
 
-.footer-site a {
-    font-family: var(--fonte-textos);
-    color: var(--cor-amarelo);
-    text-decoration: none;
-}
-
-/* ==========================================================================
-   VERSÃO DESKTOP (Media Query para Telas Maiores)
-   ========================================================================== */
-
+/* Responsive Desktop */
 @media (min-width: 768px) {
-    /* Ajustes no Cabeçalho */
     .hamburger-btn {
-        display: none; /* Esconde o botão hambúrguer no computador */
+        display: none;
     }
 
     .nav-menu {
@@ -286,7 +221,7 @@ section h2 {
 
     .nav-menu ul {
         display: flex;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .nav-menu li a {
@@ -295,49 +230,30 @@ section h2 {
         border-radius: 4px;
     }
 
-    .nav-menu li a:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-    }
-
-    /* Banner Grande */
-    .hero-banner {
-        padding: 5rem 2rem;
-    }
-
-    .hero-content h2 {
-        font-size: 2.5rem;
-    }
-
-    /* Grids em Múltiplas Colunas */
     .grid-cardapio {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
     }
+}
 
-    .diferenciais-list {
+@media (min-width: 1024px) {
+    .grid-cardapio {
         grid-template-columns: repeat(3, 1fr);
     }
+}
 
-    .info-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .info-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* Estilo corrigido para o Footer no Desktop */
-    .footer-site {
-        font-family: var(--fonte-textos);
-        font-size:25px;
+.footer-site {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+        flex-direction: row;       /* Coloca os elementos lado a lado */
+        justify-content: center;   /* Centraliza o conteúdo horizontalmente */
+        align-items: center;       /* Alinha verticalmente no centro */
+        gap: 0.5rem;               /* Espaçamento entre as frases/separadores */
+        white-space: nowrap;       /* Impede a quebra de linha automática */
     }
 
+    /* Remove margens padrão dos parágrafos do rodapé */
     .footer-site p {
         margin: 0;
+        display: inline-flex;
+        align-items: center;
     }
-} 
 

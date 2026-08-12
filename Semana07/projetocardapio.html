@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -14,10 +16,8 @@
 </head>
 <body>
 
-    <!-- Cabeçalho com as novas opções de menu -->
     <header class="header-site">
         <div class="logo-container">
-            <img src="img/logomendes.jpg" alt="Logo DoMendes pizzaria" loading="lazy">
             <h1>DoMendes</h1>
             <span>Pizzaria</span>
         </div>
@@ -31,9 +31,9 @@
 
         <nav class="nav-menu">
             <ul>
-                <li><a href="#salgadas" class="link-categoria" data-categoria="salgada">Pizzas Salgadas</a></li>
-                <li><a href="#doces" class="link-categoria" data-categoria="doce">Pizzas Doces</a></li>
-                <li><a href="#bebidas" class="link-categoria" data-categoria="bebida">Bebidas</a></li>
+                <li><a href="#" class="btn-filtro" data-categoria="todos">Todas</a></li>
+                <li><a href="#" class="btn-filtro" data-categoria="salgada">Salgadas</a></li>
+                <li><a href="#" class="btn-filtro" data-categoria="doce">Doces</a></li>
             </ul>
         </nav>
     </header>
@@ -42,26 +42,26 @@
         <section id="cardapio" class="secao-cardapio">
             <h2 id="titulo-categoria">Nosso Cardápio</h2>
             
-            <!-- Botões para filtrar diretamente na página -->
             <div class="filtros-cardapio">
                 <button class="btn-filtro active" data-categoria="todos">Todas</button>
                 <button class="btn-filtro" data-categoria="salgada">Salgadas</button>
                 <button class="btn-filtro" data-categoria="doce">Doces</button>
-                <button class="btn-filtro" data-categoria="bebida">Bebidas</button>
             </div>
             
-            <!-- Grid renderizado via JavaScript -->
             <div id="grid-cardapio-dinamico" class="grid-cardapio">
-                <!-- Conteúdo dinâmico -->
+                <!-- Cards renderizados dinamicamente via JS -->
             </div>
         </section>
     </main>
 
     <footer class="footer-site">
-        <p>&copy; <span id="anoatual"></span> 🚀 Fernando Luis Ferreira — SP - Brasil 🚀 </p>
+        <p>&copy; <span id="anoatual"></span> DoMendes Pizzaria — SP - Brasil</p>
         <p id="ultimaModificacao"></p>
-        <p><a href="referencias.html">Referências das Fontes e Imagens</a></p>
     </footer>
 
 </body>
 </html>
+
+
+
+
