@@ -1,5 +1,4 @@
 
-
 :root {
     --cor-vermelho: #B22222;
     --cor-amarelo: #D4AF37;
@@ -341,3 +340,97 @@ section h2 {
     }
 } 
 
+.footer-site, .footer-site a {
+    font-family: var(--fonte-texto);
+}
+
+/* Estilos do Formulário */
+.form-pizzaria {
+    background-color: var(--cor-amarelo);
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.campo-form label {
+    font-family: var(--fonte-titulos);
+    font-weight: bold;
+    color: var(--cor-vermelho);
+    margin-bottom: 0.3rem;
+}
+
+.campo-form input,
+.campo-form select,
+.campo-form textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--cor-vermelho);
+    border-radius: 4px;
+    font-family: var(--fonte-texto);
+    font-size: 1rem;
+}
+
+.btn-enviar {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
+    font-family: var(--fonte-titulos);
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #8B0000;
+}
+
+.mensagem-oculta {
+    display: none;
+}
+
+.sucesso-mensagem {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+filtros-cardapio {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-filtro {
+    background-color: var(--cor-amarelo);
+    color: var(--cor-vermelho);
+    border: 2px solid var(--cor-vermelho);
+    padding: 0.5rem 1rem;
+    font-family: var(--fonte-titulos);
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-filtro:hover, .btn-filtro.active {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-amarelo);
+    border-color: var(--cor-amarelo);
+}

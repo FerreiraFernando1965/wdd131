@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoMendes Pizzaria - Contato e Pedidos</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="projeto.css">
+    <script src="projeto.js" defer></script>
+</head>
+<body>
+
+    <header class="header-site">
+        <div class="logo-container">
+            <img src="img/logomendes.jpg" alt="Logo DoMendes pizzaria" loading="lazy">
+            <h1>DoMendes</h1>
+            <span>Pizzaria</span>
+        </div>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger-btn" aria-label="Abrir Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="secao-formulario">
+            <h2>Faça seu Pedido ou Fale Conosco</h2>
+            <p class="subtitulo">Preencha os dados abaixo para enviar sua mensagem ou pedido rápido:</p>
+
+            <!-- Formulário HTML Padrão -->
+            <form id="form-contato" class="form-pizzaria">
+                <div class="campo-form">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                </div>
+
+                <div class="campo-form">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                </div>
+
+                <div class="campo-form">
+                    <label for="telefone">Telefone / WhatsApp:</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(19) 99999-9999">
+                </div>
+
+                <div class="campo-form">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione...</option>
+                        <option value="pedido">Pedido Rápido</option>
+                        <option value="duvida">Dúvida ou Sugestão</option>
+                        <option value="reserva">Reserva de Mesa</option>
+                    </select>
+                </div>
+
+                <div class="campo-form">
+                    <label for="mensagem">Mensagem / Observações:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Descreva seu pedido ou mensagem..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+            </form>
+
+            <!-- Mensagem de confirmação que será exibida via JS -->
+            <div id="mensagem-retorno" class="mensagem-oculta"></div>
+        </section>
+    </main>
+
+    <footer class="footer-site">
+        <p>&copy; <span id="anoatual"></span> 🚀 Fernando Luis Ferreira — SP - Brasil 🚀</p>
+        <p id="ultimaModificacao"></p>
+        <p><a href="referencias.html">Referências das Fontes e Imagens</a></p>
+    </footer>
+
+</body>
+</html>
