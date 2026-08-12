@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoMendes Pizzaria - Tradição e Sabor</title>
+    
+    <!-- Fontes do Google Fonts: Roboto para Títulos e Playfair Display para Texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="pizzaria.css">
+</head>
+<body>
+
+    <!-- Cabeçalho / Navegação -->
+    <header class="header-site">
+        <div class="logo-container">
+            <img src="img/logomendes.jpg" alt="Logo DoMendes pizzaria" >
+            <h1>DoMendes</h1>
+            <span>Pizzaria</span>
+        </div>
+        
+        <!-- Botão Menu Hambúrguer (Mobile) -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger-btn" aria-label="Abrir Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Principal (Hero) -->
+    <section id="home" class="hero-banner">
+        <div class="hero-content">
+            <h2>A Verdadeira Pizza Artesanal</h2>
+            <p>Ingredientes selecionados, ambiente familiar com espaço kids e o melhor açaí com sorvete da região!</p>
+            
+        </div>
+    </section>
+
+    <main class="main-content">
+        <!-- Resposta rápida aos Cenários do Cliente -->
+        <section id="cardapio" class="secao-cardapio">
+            <h2>Nossos Sabores e Preços</h2>
+            <p class="subtitulo">Confira algumas de nossas pizzas mais pedidas:</p>
+            
+            <div class="grid-cardapio">
+                <article class="card-pizza">
+                    <div class="info-pizza">
+                        <h3>Calabresa Especial</h3>
+                        <p>Molho artesanal, muçarela, calabresa fatiada, cebola roxa e azeitonas pretas.</p>
+                    </div>
+                    <span class="preco">R$ 45,00</span>
+                </article>
+
+                <article class="card-pizza">
+                    <div class="info-pizza">
+                        <h3>Quatro Queijos</h3>
+                        <p>Molho de tomate, muçarela, gorgonzola, provolone e catupiry original.</p>
+                    </div>
+                    <span class="preco">R$ 52,00</span>
+                </article>
+
+                <article class="card-pizza">
+                    <div class="info-pizza">
+                        <h3>Frango com Catupiry</h3>
+                        <p>Peito de frango desfiado temperado, coberto com catupiry e milho verde.</p>
+                    </div>
+                    <span class="preco">R$ 48,00</span>
+                </article>
+
+                <article class="card-pizza">
+                    <div class="info-pizza">
+                        <h3>DoMendes da Casa</h3>
+                        <p>Presunto, lombo defumado, palmito, ovos, bacon crocante e borda recheada.</p>
+                    </div>
+                    <span class="preco">R$ 58,00</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção Sobre / Diferenciais -->
+        <section id="sobre" class="secao-diferenciais">
+            <h2>DoMendes é mais que uma Pizzaria</h2>
+            <div class="diferenciais-list">
+                <div class="diferencial-item">
+                    <h3>Espaço Kids</h3>
+                    <p>As crianças se divertem em um espaço alegre e seguro enquanto você se surpreende com o sabor de nossa pizza.</p>
+                </div>
+                <div class="diferencial-item">
+                    <h3>Açaí & Sorvetes</h3>
+                    <p>Sobremesas completas para fechar sua noite com chave de ouro.</p>
+                </div>
+                <div class="diferencial-item">
+                    <h3>Delivery e Salão</h3>
+                    <p>Entregamos sua pizza quentinha na sua casa ou temos o prazer de atendê-lo com todo  carinho.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Horário e Endereço -->
+        <section id="contato" class="secao-info">
+            <h2>Horários e Localização</h2>
+            <div class="info-grid">
+                <div class="info-block">
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Terça a Domingo: 18h00 às 23h30</p>
+                    <p><em>Fechado às Segundas-feiras</em></p>
+                </div>
+                <div class="info-block">
+                    <h3>Endereço</h3>
+                    <p>Avenida Washington Luis, nº 123 - Jardim Leonor</p>
+                    <p>Atendemos Consumo no Local e Delivery</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer-site">
+        
+            
+        </div>
+    </footer>
+
+    
+</body>
+</html>
