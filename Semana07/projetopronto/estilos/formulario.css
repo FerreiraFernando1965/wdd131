@@ -1,0 +1,225 @@
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color:#D4AF37;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px 10px;
+}
+
+/* Largura e alinhamento dos containers */
+.Avaliação,
+.form-container,
+footer {
+  width: 100%;
+  max-width: 380px;
+}
+
+/* Cabeçalho e Rodapé */
+.Avaliação,
+footer {
+  background-color: #B22222;
+  color: #fac104;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.Avaliação {
+  padding: 16px 0;
+  margin-bottom: 20px;
+}
+
+.Avaliação h1 {
+  font-size: 20px;
+}
+
+footer {
+  padding: 15px 10px;
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* Container Principal */
+.form-container {
+  background-color: #B22222;
+  border: 1px solid #a38c8c;
+  border-radius: 8px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-grupo {
+  margin-bottom: 18px;
+}
+
+label, 
+.grupo-label {
+  display: block;
+  font-weight: bold;
+  color: #222222;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.opcional {
+  color: #0c0a0a;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.sub-label {
+  display: block;
+  font-style: italic;
+  color: #0c0b0b;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+/* Inputs, Select e Textarea */
+select,
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #D4AF37;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  border-color: #2a0826;
+  box-shadow: 0 0 4px rgba(42, 8, 38, 0.3);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* Classificação por Estrelas e Radios */
+.avaliação-grupo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 8px 0;
+}
+
+.avaliação-estrela {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.avaliação-estrela .estrelas {
+  font-size: 12px;
+  color: #333333;
+  cursor: pointer;
+}
+
+.avaliação-estrela input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Checkboxes */
+.checkbox-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.checkbox-item label {
+  margin-bottom: 0;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+/* Botão de Envio */
+.btn-submit,
+.btn-voltar {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  background-color: #D4AF37;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #B22222;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 10px;
+}
+
+.btn-submit:hover,
+.btn-voltar:hover {
+  background-color: #8f6f08;
+}
+
+/* Estilos da Página de Confirmação */
+.confirmacao-box {
+  text-align: center;
+}
+
+.confirmacao-box h2 {
+  font-size: 18px;
+  color: #2a0826;
+  margin-bottom: 15px;
+}
+
+.contador-texto {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.contador-texto strong {
+  color: #2a0826;
+  font-size: 18px;
+}
+
+/* Responsividade para telas maiores */
+@media (min-width: 600px) {
+  .Avaliação,
+  .form-container,
+  footer {
+    max-width: 550px;
+  }
+
+  .form-container {
+    padding: 35px 30px;
+  }
+}

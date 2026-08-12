@@ -17,36 +17,38 @@
 
 <body>
 
-    <header>        
-        <button id="botao-menu" aria-label="Abrir menu">☰</button>
-        
-        
-        <img src="./img/logo sem o fundo.webp" alt="Logo DoMendes pizzaria" class="logo-header">
-        <h1 class="handler">DoMendes</h1>
+    <header>
+        <div class="brand">
+            <img src="img/logovermelho.webp" alt="Logo DoMendes pizzaria" class="logo-header">
+            <div class="brand-text">
+                <h1>DoMendes</h1>
+                <p>pizzaria</p>
+            </div>
+        </div>
 
-         <nav id="menu-navegacao">
-        <ul>
-            <li><a href=".html" class="active">Home</a></li>
-            <li><a href="pizzaria-cardapio.html">Cardápio</a></li>
-            <li><a href="contato.html">Contato</a></li>
-             <li><a href="formulario.html">Cadastre-se</a></li>
+        <button id="botao-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
 
-        </ul>
-    </nav>
-          
+        <nav id="menu-navegacao">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pizzaria-cardapio.html">Cardápio</a></li>
+                <li><a href="formulario.html">Cadastre-se</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class=" frente">
-             <img src="./img/frente clareada.webp" alt="Recepção da DoMendes pizarria">
-             </section>
-       
-                  
-        
+        <section class="frente">
+            <picture>
+                <source media="(max-width: 768px)" srcset="img/mendesnapizzaria.webp">
+                <img src="img/frente clareada.webp" alt="Recepção da DoMendes pizzaria">
+            </picture>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="anoatual"></span> 🚀 Fernando Luis Ferreira — SP - Brasil 🚀 </p>
+        <p>&copy; <span id="anoatual"></span> 🚀 Fernando Luis Ferreira — SP - Brasil 🚀</p>
         <p id="ultimaModificacao"></p>
     </footer>
 

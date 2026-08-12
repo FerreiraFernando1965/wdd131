@@ -1,33 +1,5 @@
-const cardapioPizzas = [
-    {
-        id: 1,
-        nome: "Calabresa Especial",
-        ingredientes: "Molho artesanal, muçarela, calabresa fatiada, cebola roxa e azeitonas pretas.",
-        preco: 45.00,
-        categoria: "tradicional"
-    },
-    {
-        id: 2,
-        nome: "Quatro Queijos",
-        ingredientes: "Molho de tomate, muçarela, gorgonzola, provolone e catupiry original.",
-        preco: 52.00,
-        categoria: "especial"
-    },
-    {
-        id: 3,
-        nome: "Frango com Catupiry",
-        ingredientes: "Peito de frango desfiado temperado, coberto com catupiry e milho verde.",
-        preco: 48.00,
-        categoria: "tradicional"
-    },
-    {
-        id: 4,
-        nome: "DoMendes da Casa",
-        ingredientes: "Presunto, lombo defumado, palmito, ovos, bacon crocante e borda recheada.",
-        preco: 58.00,
-        categoria: "especial"
-    }
-];
+
+
 
 // Função 1: Renderizar o cardápio usando Array Methods e Template Literals
 function renderizarCardapio(pizzas) {

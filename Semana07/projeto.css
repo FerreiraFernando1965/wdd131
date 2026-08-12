@@ -23,7 +23,7 @@ body {
     line-height: 1.6;
 }
 
-/* Tipografia dos Títulos usando Roboto conforme especificado */
+
 h1,h3, h4, h5, h6 {
     font-family: var(--fonte-titulos);
     color: var(--cor-vermelho);
@@ -33,9 +33,7 @@ h2{
     color: var(--cor-amarelo);
 }
 
-/* ==========================================================================
-   LAYOUT MOBILE-FIRST (Estilos Padrão para Telas Pequenas)
-   ========================================================================== */
+
 
 /* Cabeçalho e Navegação Mobile */
 .header-site {
@@ -65,7 +63,6 @@ h2{
     letter-spacing: 2px;
 }
 
-/* Menu Hambúrguer em CSS Puro */
 .menu-toggle {
     display: none;
 }
@@ -117,33 +114,32 @@ h2{
     color: var(--cor-amarelo);
 }
 
-/* Exibir menu ao marcar o checkbox */
+
 .menu-toggle:checked ~ .nav-menu {
     display: block;
 }
 
-/* Banner Principal (Hero) */
+
 .hero-banner {
     background: var(--cor-vermelho);
     color: var(--cor-branco);
     padding: 3rem 1.5rem;
     text-align: center;
     border: 8px solid var(--cor-amarelo);
-    background-image: url('img/frente\ clareada.webp');
+    background-image: url('img/frente clareada.webp');
     
-    /* Garante que a imagem cubra toda a área sem repetir */
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    /* Ajustes de altura e centralização do conteúdo */
-    min-height: 100vh; /* Ocupa 80% da altura da tela */
+    
+    min-height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #ffffff; /* Deixa os textos brancos para destacar*/
-
+    color: #ffffff; 
 }
 
 
@@ -161,7 +157,7 @@ h2{
 
 
 
-/* Conteúdo Principal */
+
 .main-content {
     padding: 1.5rem 1rem;
     max-width: 1100px;
@@ -327,7 +323,7 @@ section h2 {
     /* Estilo corrigido para o Footer no Desktop */
     .footer-site {
         font-family: var(--fonte-textos);
-        font-size:25px;
+        font-size: 1rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
