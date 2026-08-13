@@ -168,11 +168,11 @@ textarea {
 /* Botão de Envio */
 .btn-submit,
 .btn-voltar {
-  display: inline-block;
+  display: block;
   width: 100%;
-  padding: 12px;
+  padding: 12px 16px;
   background-color: #D4AF37;
-  border: none;
+  border: 2px solid #D4AF37;
   border-radius: 5px;
   font-weight: bold;
   font-size: 20px;
@@ -180,13 +180,17 @@ textarea {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.2s ease;
-  margin-top: 10px;
+  transition: all 0.2s ease-in-out;
+  margin-top: 15px;
+  box-sizing: border-box;
 }
 
 .btn-submit:hover,
 .btn-voltar:hover {
-  background-color: #8f6f08;
+  background-color: #fac104;
+  border-color: #fac104;
+  color: #8B0000;
+  transform: translateY(-1px);
 }
 
 /* Estilos da Página de Confirmação */
@@ -196,18 +200,18 @@ textarea {
 
 .confirmacao-box h2 {
   font-size: 18px;
-  color: #2a0826;
-  margin-bottom: 15px;
+  color: #fac104;
+  line-height: 1.4;
 }
 
 .contador-texto {
   font-size: 15px;
   margin-bottom: 20px;
-  color: #333333;
+  color: #ffffff;
 }
 
 .contador-texto strong {
-  color: #2a0826;
+  color: #fac104;
   font-size: 18px;
 }
 

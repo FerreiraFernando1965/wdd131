@@ -8,13 +8,13 @@
    com avaliação do produto e página de agradecimento e confirmação">
   <meta name="author" content="Fernando Luis Ferreira">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Revisão de Produto</title>
-  <link rel="stylesheet" href="formulario.css">
-  <script src="scripts/formulario.js" defer></script>
+  <title>Avaliação da DoMendes</title>
+  <link rel="stylesheet" href="avaliacao.css">
+  <script src="scripts/review.js" defer></script>
 </head>
 <body>
 
-  <header class="Avaliação">
+  <header class="avaliacao-header">
     <h1>Avaliação da DoMendes</h1>
     <p>Faça seu cadastro e avaliação para participar de nossas promoções</p>
   </header>
@@ -26,6 +26,11 @@
         <label for="produto">Nome do Produto</label>
         <select id="produto" name="produto" required>
           <option value="" disabled selected >"Selecione um item..."</option>
+          <option value="Pizza Salgada">Pizza Salgada</option>
+          <option value="Pizza Doce">Pizza Doce</option>
+          <option value="Espaço Kids">Espaço Kids</option>
+          <option value="Tempo de espera">Tempo de espera</option>
+
         </select>
       </div>
 
@@ -33,31 +38,31 @@
         <span class="grupo-label">Classificação Geral</span>
         <div class="avaliação-grupo">
           <div class="avaliação-estrela">
-            <label for="rating1" class="estrelas">☆</label>
             <input type="radio" id="rating1" name="classificacao" value="1" required>
+            <label for="rating1" class="estrelas">☆</label>
           </div>
           <div class="avaliação-estrela">
-            <label for="rating2" class="estrelas">☆☆</label>
             <input type="radio" id="rating2" name="classificacao" value="2" required>
+            <label for="rating2" class="estrelas">☆☆</label>
           </div>
           <div class="avaliação-estrela">
-            <label for="rating3" class="estrelas">☆☆☆</label>
             <input type="radio" id="rating3" name="classificacao" value="3" required>
+            <label for="rating3" class="estrelas">☆☆☆</label>
           </div>
           <div class="avaliação-estrela">
-            <label for="rating4" class="estrelas">☆☆☆☆</label>
             <input type="radio" id="rating4" name="classificacao" value="4" required>
+            <label for="rating4" class="estrelas">☆☆☆☆</label>
           </div>
           <div class="avaliação-estrela">
-            <label for="rating5" class="estrelas">☆☆☆☆☆</label>
             <input type="radio" id="rating5" name="classificacao" value="5" required>
+            <label for="rating5" class="estrelas">☆☆☆☆☆</label>
           </div>
         </div>
       </div>
 
       <div class="form-grupo">
-        <label for="data-instalacao">Data da Avaliação</label>
-        <input type="date" id="data-instalacao" name="dataInstalacao" required>
+        <label for="data-avaliacao">Data da Avaliação</label>
+        <input type="date" id="data-avaliacao" name="datavaliacao" required>
       </div>
 
       <div class="form-grupo">
@@ -65,20 +70,20 @@
         <span class="sub-label">(Marque todos que se aplicam)</span>
         <div class="checkbox-grupo">
           <div class="checkbox-item">
-            <input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade">
-            <label for="durabilidade">Sabor</label>
+            <input type="checkbox" id="sabor" name="itens" value="Sabor">
+            <label for="sabor">Sabor</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="facilidade" name="recursos" value="Facilidade de Uso">
-            <label for="facilidade">Apresentação</label>
+            <input type="checkbox" id="apresentação" name="itens" value="Apresentação">
+            <label for="apresentação">Apresentação</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="desempenho" name="recursos" value="Desempenho">
-            <label for="desempenho">Atendimento</label>
+            <input type="checkbox" id="atendimento" name="itens" value="Atendimento">
+            <label for="atendimento">Atendimento</label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="design" name="recursos" value="Design">
-            <label for="design">Limpeza</label>
+            <input type="checkbox" id="limpeza" name="itens" value="Limpeza">
+            <label for="limpeza">Limpeza</label>
           </div>
         </div>
       </div>
