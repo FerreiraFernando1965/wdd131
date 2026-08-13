@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -17,9 +16,12 @@
 <body>
 
     <header class="header-site">
-        <div class="logo-container">
-            <h1>DoMendes</h1>
-            <span>Pizzaria</span>
+        <div class="brand">
+            <img src="img/logovermelho.webp" alt="Logo DoMendes pizzaria" class="logo-header">
+            <div class="brand-text">
+                <h1>DoMendes</h1>
+                
+            </div>
         </div>
         
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -31,9 +33,9 @@
 
         <nav class="nav-menu">
             <ul>
-                <li><a href="#" class="btn-filtro" data-categoria="todos">Todas</a></li>
-                <li><a href="#" class="btn-filtro" data-categoria="salgada">Salgadas</a></li>
-                <li><a href="#" class="btn-filtro" data-categoria="doce">Doces</a></li>
+                <li><button class="btn-filtro btn-nav-filtro active" data-categoria="todos">Todas</button></li>
+                <li><button class="btn-filtro btn-nav-filtro" data-categoria="salgada">Salgadas</button></li>
+                <li><button class="btn-filtro btn-nav-filtro" data-categoria="doce">Doces</button></li>
             </ul>
         </nav>
     </header>
@@ -49,19 +51,15 @@
             </div>
             
             <div id="grid-cardapio-dinamico" class="grid-cardapio">
-                
+                <!-- Pizzas injetadas via JavaScript -->
             </div>
         </section>
     </main>
 
     <footer class="footer-site">
-         <p>&copy; <span id="anoatual"></span> 🚀 Fernando Luis Ferreira — SP - Brasil 🚀 </p>
+        <p>&copy; <span id="anoatual"></span> 🚀 Fernando Luis Ferreira — SP - Brasil 🚀 </p>
         <p id="ultimaModificacao"></p>
     </footer>
 
 </body>
 </html>
-
-
-
-

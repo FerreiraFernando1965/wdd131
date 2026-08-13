@@ -1,4 +1,3 @@
-
 :root {
     --cor-vermelho: #B22222;
     --cor-amarelo: #D4AF37;
@@ -23,17 +22,15 @@ body {
     line-height: 1.6;
 }
 
-
-h1,h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
     font-family: var(--fonte-titulos);
     color: var(--cor-vermelho);
 }
-h2{
+
+h2 {
     font-family: var(--fonte-titulos);
     color: var(--cor-amarelo);
 }
-
-
 
 /* Cabeçalho e Navegação Mobile */
 .header-site {
@@ -49,18 +46,33 @@ h2{
     border-bottom: 3px solid var(--cor-amarelo);
 }
 
-.logo-container h1 {
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    transform: rotate(90deg);
+   
+   
+}
+.logo-texto h1 {
     color: var(--cor-amarelo);
     font-size: 1.6rem;
     margin: 0;
     line-height: 1;
 }
 
-.logo-container span {
+.logo-texto span {
     font-family: var(--fonte-texto);
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+  
 }
 
 .menu-toggle {
@@ -114,35 +126,22 @@ h2{
     color: var(--cor-amarelo);
 }
 
-
 .menu-toggle:checked ~ .nav-menu {
     display: block;
 }
 
-
+/* Banner Hero */
 .hero-banner {
-    background: var(--cor-vermelho);
+    background: var(--cor-vermelho) url('img/frenteclareada.webp') no-repeat center / cover;
     color: var(--cor-branco);
     padding: 3rem 1.5rem;
-    text-align: center;
     border: 8px solid var(--cor-amarelo);
-    background-image: url('img/frente clareada.webp');
-    
-    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    
     min-height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #ffffff; 
 }
-
-
 
 .hero-content h2 {
     color: var(--cor-amarelo);
@@ -155,9 +154,7 @@ h2{
     margin-bottom: 1.5rem;
 }
 
-
-
-
+/* Conteúdo Principal */
 .main-content {
     padding: 1.5rem 1rem;
     max-width: 1100px;
@@ -210,7 +207,7 @@ section h2 {
 
 .card-pizza p {
     font-size: 1.1rem;
-     font-weight: bold;
+    font-weight: bold;
     margin-bottom: 0.8rem;
 }
 
@@ -222,19 +219,18 @@ section h2 {
     align-self: flex-end;
 }
 
-/* Seção de Diferenciais e Infos */
 .diferenciais-list, .info-grid {
-    background-color: var(--cor-amarelo);   
+    background-color: var(--cor-amarelo);    
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;}
+    gap: 1rem;
+}
 
 .info-block p {
     font-size: 1rem;
     padding: 1rem;
     margin: 1px;
 }
-
 
 .diferencial-item, .info-block {
     text-align: center;
@@ -245,102 +241,7 @@ section h2 {
     margin-bottom: 0.4rem;
 }
 
-/* Rodapé */
-.footer-site {
-    
-    background-color: var(--cor-vermelho);
-    color: var(--cor-amarelo);
-    text-align: center;
-    padding: 1.5rem 1rem;
-    font-size: 1rem;
-    border-top: 3px solid var(--cor-amarelo);
-}
-
-.footer-site a {
-    font-family: var(--fonte-textos);
-    color: var(--cor-amarelo);
-    text-decoration: none;
-}
-
-/* ==========================================================================
-   VERSÃO DESKTOP (Media Query para Telas Maiores)
-   ========================================================================== */
-
-@media (min-width: 768px) {
-    /* Ajustes no Cabeçalho */
-    .hamburger-btn {
-        display: none; /* Esconde o botão hambúrguer no computador */
-    }
-
-    .nav-menu {
-        display: block;
-        position: static;
-        width: auto;
-        border-bottom: none;
-    }
-
-    .nav-menu ul {
-        display: flex;
-        gap: 1.5rem;
-    }
-
-    .nav-menu li a {
-        border-top: none;
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-    }
-
-    .nav-menu li a:hover {
-        background-color: rgba(255, 255, 255, 0.2);
-    }
-
-    /* Banner Grande */
-    .hero-banner {
-        padding: 5rem 2rem;
-    }
-
-    .hero-content h2 {
-        font-size: 2.5rem;
-    }
-
-    /* Grids em Múltiplas Colunas */
-    .grid-cardapio {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-
-    .diferenciais-list {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .info-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .info-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* Estilo corrigido para o Footer no Desktop */
-    .footer-site {
-        font-family: var(--fonte-textos);
-        font-size: 1rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    .footer-site p {
-        margin: 0;
-    }
-} 
-
-.footer-site, .footer-site a {
-    font-family: var(--fonte-texto);
-}
-
-/* Estilos do Formulário */
+/* Formulário */
 .form-pizzaria {
     background-color: var(--cor-amarelo);
     padding: 1.5rem;
@@ -405,7 +306,9 @@ section h2 {
     text-align: center;
     font-weight: bold;
 }
-filtros-cardapio {
+
+/* Filtros */
+.filtros-cardapio {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
@@ -429,4 +332,82 @@ filtros-cardapio {
     background-color: var(--cor-vermelho);
     color: var(--cor-amarelo);
     border-color: var(--cor-amarelo);
+}
+
+/* Rodapé */
+.footer-site {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-amarelo);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 1rem;
+    border-top: 3px solid var(--cor-amarelo);
+}
+
+.footer-site, .footer-site a {
+    font-family: var(--fonte-texto);
+    color: var(--cor-amarelo);
+    text-decoration: none;
+}
+
+/* Media Queries (Desktop) */
+@media (min-width: 768px) {
+    .hamburger-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+        position: static;
+        width: auto;
+        border-bottom: none;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .nav-menu li a {
+        border-top: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+    }
+
+    .nav-menu li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .hero-banner {
+        padding: 5rem 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .grid-cardapio {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .diferenciais-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-site {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-site p {
+        margin: 0;
+    }
 }
