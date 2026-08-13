@@ -236,7 +236,26 @@ h2 {
         position: static;
         width: auto;
         border-bottom: none;
-    }
+     }
+    .nav-menu a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    font-family: var(--fonte-titulos);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* Estado quando o botão está ativo (Página atual) */
+.nav-menu a.active,
+.nav-menu a:hover {
+    color: var(--cor-vermelho);
+    background-color: var(--cor-amarelo);
+    border-radius: 20px;
+    font-weight: bold;
+}
+
 
     .nav-menu ul {
         display: flex;
@@ -272,3 +291,4 @@ h2 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+3. cardapio.js

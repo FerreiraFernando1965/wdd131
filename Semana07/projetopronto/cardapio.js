@@ -68,6 +68,7 @@ const pizzas = [
 // Função para renderizar as pizzas na tela
 function renderizarCardapio(lista) {
     const grid = document.querySelector("#grid-cardapio-dinamico");
+    if (!grid) return;
     grid.innerHTML = "";
 
     lista.forEach(pizza => {
@@ -105,10 +106,14 @@ botoesFiltro.forEach(botao => {
 });
 
 // Inicialização de datas no rodapé
-document.querySelector("#anoatual").textContent = new Date().getFullYear();
+const elAno = document.querySelector("#anoatual");
+if (elAno) elAno.textContent = new Date().getFullYear();
 
-const dataModificacao = new Date(document.lastModified);
-document.querySelector("#ultimaModificacao").textContent = `Última atualização: ${dataModificacao.toLocaleDateString("pt-BR")}`;
+const elModificacao = document.querySelector("#ultimaModificacao");
+if (elModificacao) {
+    const dataModificacao = new Date(document.lastModified);
+    elModificacao.textContent = `Última atualização: ${dataModificacao.toLocaleDateString("pt-BR")}`;
+}
 
 // Inicializar carregando todas as pizzas
 renderizarCardapio(pizzas);

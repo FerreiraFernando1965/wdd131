@@ -20,10 +20,9 @@
             <img src="img/logovermelho.webp" alt="Logo DoMendes pizzaria" class="logo-header">
             <div class="brand-text">
                 <h1>DoMendes</h1>
-                
             </div>
         </div>
-        
+
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle" class="hamburger-btn" aria-label="Abrir Menu">
             <span></span>
@@ -31,33 +30,31 @@
             <span></span>
         </label>
 
-        <nav class="nav-menu">
+        <nav class="nav-menu" id="menu-navegacao">
             <ul>
-                <li><button class="btn-filtro btn-nav-filtro active" data-categoria="todos">Todas</button></li>
-                <li><button class="btn-filtro btn-nav-filtro" data-categoria="salgada">Salgadas</button></li>
-                <li><button class="btn-filtro btn-nav-filtro" data-categoria="doce">Doces</button></li>
+                <li><a href="pizzaria.html" class="active">Home</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main-content">
-        <section id="cardapio" class="secao-cardapio">
-            <h2 id="titulo-categoria">Nosso Cardápio</h2>
-            
+        <section class="secao-cardapio">
+            <h2>Nosso Cardápio</h2>
+
             <div class="filtros-cardapio">
-                <button class="btn-filtro active" data-categoria="todos">Todas</button>
+                <button class="btn-filtro active" data-categoria="todos">Todos</button>
                 <button class="btn-filtro" data-categoria="salgada">Salgadas</button>
                 <button class="btn-filtro" data-categoria="doce">Doces</button>
             </div>
-            
+
             <div id="grid-cardapio-dinamico" class="grid-cardapio">
-                <!-- Pizzas injetadas via JavaScript -->
+                <!-- As pizzas serão injetadas via JavaScript -->
             </div>
         </section>
     </main>
 
     <footer class="footer-site">
-        <p>&copy; <span id="anoatual"></span> 🚀 Fernando Luis Ferreira — SP - Brasil 🚀 </p>
+        <p>&copy; <span id="anoatual"></span> DoMendes Pizzaria</p>
         <p id="ultimaModificacao"></p>
     </footer>
 
